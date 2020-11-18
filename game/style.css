@@ -1,0 +1,104 @@
+  
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 20px 0;
+  background: white ;
+  text-align: center;
+}
+
+.grid {
+  text-align: center;
+  width: 100%;
+  max-width: 960px;
+  border-radius: 4px;
+  box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1%;
+  margin-left:22%;  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card {
+  -webkit-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  transition: all .4s linear;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.card,
+.back,
+.front {
+  height: 150px;
+  width: 150px;
+}
+
+.back,
+.front {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.front {
+  background: white url('https://dev.bangbang.agency/fullstack/imgs/VturismoImobiliarioServicos/bangbang.png') no-repeat center center / contain;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.match .front {
+  background: rgb(1, 206, 1) !important;
+}
+
+#buttonDiv{
+  margin-top: 1%;
+  text-align: center;
+}
+
+#startButton{
+  margin-top: 1%;
+  text-align: center;
+}
+
+#clock{
+  font-family: 'Orbitron', sans-serif;
+  color: black;
+  font-size: 56px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+  
